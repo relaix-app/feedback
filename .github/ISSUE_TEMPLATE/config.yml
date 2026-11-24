@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Suggest an idea or vote on one
+    url: https://github.com/relaix-app/feedback/discussions/categories/ideas
+    about: Ideas live in Discussions, where they can be voted on.
+  - name: Ask a question
+    url: https://github.com/relaix-app/feedback/discussions/categories/q-a
+    about: Questions about using Relaix.
+  - name: Report a security problem (privately)
+    url: https://relaix.app/security
+    about: Please don't post security problems here; email security@relaix.app.

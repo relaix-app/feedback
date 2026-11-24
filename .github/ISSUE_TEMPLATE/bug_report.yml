@@ -1,0 +1,70 @@
+name: Bug report
+description: Something in Relaix doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Everything here is public: leave out passwords, keys, and host names or addresses you'd rather keep private.
+        **Security problems:** please email security@relaix.app privately instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. ...
+        2. ...
+  - type: input
+    id: version
+    attributes:
+      label: Relaix version
+      description: Help > About
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - Windows 11
+        - Windows 10
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: system-version
+    attributes:
+      label: System version or distribution
+      placeholder: "e.g. Windows 11 24H2, Ubuntu 24.04"
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of connection
+      multiple: true
+      options:
+        - SSH
+        - SFTP
+        - RDP
+        - VNC
+        - Telnet
+        - FTP / FTPS
+        - Serial
+        - Web page
+        - Local shell
+        - Not connection-related
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Error text, screenshots, the server or device on the other end (a switch model, a server OS) if it matters.
